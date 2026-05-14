@@ -85,18 +85,19 @@ const isLandscape = (width, height) => console.log(`Landscape mode: ${width > he
 isLandscape(40, 20)
 
 const fizzBuzz = input => {
+    console.log()
     if (input % 3 === 0 && input % 5 === 0) {
         console.log('FizzBuzz')
     } else if (input % 5 === 0) {
         console.log('Buzz')
     } else if (input % 3 === 0) {
         console.log('Fizz')
-    } else {
+    } else if (typeof input !== "number"){
         console.log('not a number')
     }
 }
 
-fizzBuzz(12)
+fizzBuzz('')
 
 const checkSpeed = speed => {
     if (speed <= 70) {
